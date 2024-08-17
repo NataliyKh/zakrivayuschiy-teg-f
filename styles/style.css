@@ -279,6 +279,7 @@
 .card__icon-button {
   border: none;
   height: 38px;
+  background-color: inherit;
 }
 
 .card__icon-button:focus {
@@ -288,6 +289,10 @@
 .card__icon-button:focus-visible {
   color: var(--accent-color);
   outline: 2px solid var(--accent-color);
+}
+
+.sparks {
+  opacity: 0;
 }
 
 .dialog__button {
