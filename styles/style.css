@@ -194,6 +194,15 @@
   cursor: pointer;
 }
 
+.button:focus {
+  border: none;
+}
+
+.button:focus-visible {
+  box-shadow: 2px 2px 0px 2px var(--accent-color);
+  outline: 2px solid var(--accent-color);
+}
+
 .button__text {
   font-size: 14px;
   position: relative;
@@ -217,9 +226,17 @@
 }
 
 .card__icon-button {
-  background-color: gray;
   border: none;
   height: 38px;
+}
+
+.card__icon-button:focus {
+  border: none;
+}
+
+.card__icon-button:focus-visible {
+  color: var(--accent-color);
+  outline: 2px solid var(--accent-color);
 }
 
 .dialog__button {
