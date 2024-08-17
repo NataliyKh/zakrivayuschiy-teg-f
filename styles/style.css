@@ -88,7 +88,7 @@
   background-color: var(--background-color);
   border: 2px solid var(--accent-color);
   display: block;
-  /*margin-inline: auto;*/
+  margin-inline: auto;
 }
 
 .card_title {
@@ -222,3 +222,20 @@
   height: 38px;
 }
 
+.dialog__button {
+  gap: 8px;
+  margin-block-start: 50px;
+  margin-block-end: 100px;
+  margin-inline: auto;
+  width: 335px;
+  padding-block: 15px;
+}
+
+.floppy {
+  width: 21px;
+  height: auto;
+  mix-blend-mode: difference;
+  position: relative;
+  z-index: 1;
+  color: var(--buttom-like-text-color);
+}
