@@ -38,14 +38,17 @@
   margin-block-end: 100px;
   margin-inline: auto;
   padding-block-start: 136px;
-  padding-block-end: 20px;
+}
+
+.header__logo-group {
+  display: grid;
+  gap: 20px;
 }
 
 .header__title {
-  display: block;
   text-decoration: none;
   font-size: clamp(3.0625rem, 1.9087rem + 4.9231vw, 4.0625rem);
-  padding-block-end: 20px;
+  line-height: clamp(3.0625rem, 1.9087rem + 4.9231vw, 4.0625rem);
 }
 
 .header__title:focus {
@@ -60,21 +63,28 @@
 .header__theme-menu {
   display: flex;
   justify-content: center;
+  padding-block-start: 25px;
+  padding-block-end: 25px;
 }
 
 .theme-menu__list {
   display: flex;
   flex-direction: column;
   gap: 14px;
-  padding-block-start: 25px;
   font-size: 14px;
+  line-height: 14px;
   text-align: left;
+}
+
+.theme-menu__item {
+  max-height: 14px;
 }
 
 .theme-menu__button {
   background-color: transparent;
   text-transform: uppercase;
   border: none;
+  cursor: pointer;
 }
 
 .section {
