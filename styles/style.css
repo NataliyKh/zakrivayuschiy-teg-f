@@ -167,7 +167,6 @@
   object-fit: cover;
 }
 
-/*
 .filter_brightness {
   filter: brightness(90%);
 }
@@ -198,7 +197,7 @@
   
 .many_filters {
   filter: contrast(120%) saturate(120%);
-}*/
+}
 
 .img__label {
   font-family: var(--accent-font), fantasy, sans-serif;
