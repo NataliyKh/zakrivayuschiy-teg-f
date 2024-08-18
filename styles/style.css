@@ -28,6 +28,7 @@
   background-size: cover;
   margin-block-start: 100px;
   margin-block-end: 100px;
+  min-width: 375px;
 }
 
 .header {
@@ -388,4 +389,35 @@ dialog::backdrop {
 
 .button__dialog:focus {
   outline: none;
+}
+
+@media (width <= 375px) {
+  .header {
+    padding-block-start: 120px;
+  }
+
+  .header__title {
+    right: 13px;
+  }
+
+  .save {
+    inline-size: 306px;
+  }
+
+  .save__button {
+    flex-direction: column;
+  }
+
+  .save__floppy {
+    inline-size: 28px;
+    block-size: 28px;
+  }
+
+  .dialog {
+    padding: 30px 42px;
+  }
+
+  .dialog__text {
+    max-inline-size: 198px;
+  }
 }
