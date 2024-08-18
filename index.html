@@ -421,13 +421,14 @@
           </svg>
           <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
         </div>
-        <button
+        <form method="dialog">
+          <button
           class="button__dialog button"
-          type="button"
-          onclick="window['dialog'].close()"
-        >
-          ОК
-        </button>
+          type="submit"
+          >
+            ОК
+          </button>
+        </form>
       </dialog>
     </footer>
     <script src="./scripts/like.js"></script>
