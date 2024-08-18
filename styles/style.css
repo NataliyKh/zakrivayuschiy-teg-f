@@ -26,6 +26,8 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-block-start: 100px;
+  margin-block-end: 100px;
 }
 
 .header {
@@ -34,7 +36,6 @@
   border: 2px solid var(--accent-color);
   background-color: var(--background-color);
   font-family: var(--accent-font), fantasy, sans-serif;
-  margin-block-start: 100px;
   margin-block-end: 100px;
   margin-inline: auto;
   padding-block-start: 136px;
@@ -314,20 +315,77 @@
   opacity: 0;
 }
 
-.dialog__button {
-  gap: 8px;
-  margin-block-start: 50px;
-  margin-block-end: 100px;
+.save {
+  display: grid;
+  justify-self: center;
+  background-color: var(--background-color);
+  inline-size: 335px;
   margin-inline: auto;
-  width: 335px;
-  padding-block: 15px;
+  margin-block-start: 50px;
+  
 }
 
-.floppy {
-  width: 21px;
-  height: auto;
-  mix-blend-mode: difference;
-  position: relative;
-  z-index: 1;
-  color: var(--buttom-like-text-color);
+.save__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 15px 0;
+}
+
+.save__floppy {
+  inline-size: 21px;
+  block-size: 21px;
+}
+
+.dialog {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  gap: 30px;
+  border: 2px solid var(--accent-color);
+  padding: 30px;
+  color: var(--accent-color, #000);
+  font-family: var(--accent-font), "PressStart2P", fantasy;
+  font-size: 14px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  background-color: var(--background-color);
+  max-inline-size: 357px;
+}
+
+dialog:not([open]) {
+  opacity: 0;
+  pointer-events: none;
+}
+
+dialog::backdrop {
+  background-color: rgb(0 0 0 / 0.75);
+}
+
+.dialog__content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.dialog__floppy {
+  width: 39px;
+  height: 39px;
+}
+
+.dialog__text {
+  max-inline-size: 234px;
+}
+
+.button__dialog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  inline-size: 100%;
+  block-size: 38px;
+}
+
+.button__dialog:focus {
+  outline: none;
 }
