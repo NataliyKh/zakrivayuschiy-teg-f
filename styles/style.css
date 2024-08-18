@@ -317,17 +317,9 @@
   opacity: 0;
 }
 
-.save {
-  display: grid;
-  justify-self: center;
+.save__button {
   background-color: var(--background-color);
   inline-size: 335px;
-  margin-inline: auto;
-  margin-block-start: 50px;
-  
-}
-
-.save__button {
   margin-inline: auto;
   margin-block-start: 50px;
   margin-block-end: 100px;
@@ -406,11 +398,8 @@ dialog::backdrop {
     padding-inline-end: 13px;
   }
 
-  .save {
-    inline-size: 306px;
-  }
-
   .save__button {
+    inline-size: 306px;
     flex-direction: column;
   }
 
