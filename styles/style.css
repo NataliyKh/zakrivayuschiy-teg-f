@@ -162,7 +162,6 @@
 .img__card {
   border-top: 2px solid var(--accent-color);
   border-bottom: 2px solid var(--accent-color);
-  min-width: 375px;
   width: 100%;
   aspect-ratio : 1 / 1;
   object-fit: cover;
