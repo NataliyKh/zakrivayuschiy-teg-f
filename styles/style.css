@@ -283,7 +283,7 @@
 
 .card__button__container {
   display: flex;
-  gap: 10px;
+  gap: 6px;
   justify-content: end;
   align-items: center;
   margin: 25px 25px 25px 0px;
@@ -300,6 +300,7 @@
   background-color: inherit;
   cursor: pointer;
   transition: color 0.3s ease;
+  padding: 0;
 }
 
 .card__icon-button:focus {
