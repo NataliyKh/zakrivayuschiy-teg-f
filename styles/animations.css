@@ -80,7 +80,7 @@
   transition: fill 0.3s 0.05s linear;
 }
 
-.like-icon.contour {
+.like-icon .contour {
   transition: fill 0.1s linear;
 }
 
