@@ -207,7 +207,7 @@
   position: absolute;
   inset-inline-end: 0;
   padding-inline-end: 25px;
-  padding-block-start: 27px;
+  padding-block-start: 25px;
   mix-blend-mode: hard-light;
   text-shadow: 0px 0px 5px black;
   color: var(--accent-color);
@@ -400,6 +400,10 @@ dialog::backdrop {
 
   .header__title {
     right: 13px;
+  }
+
+  .img__label {
+    padding-inline-end: 13px;
   }
 
   .save {
